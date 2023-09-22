@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".views.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@drawable/csecurity" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:fontFamily="@font/arsenal"
+            android:text="We’re all going to have to change how we think about data protection. \n-Elizabeth Denham"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnLetsGo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/corners_bg"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Let's go!"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</layout>

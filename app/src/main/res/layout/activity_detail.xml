@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.DetailActivity">
+
+        <TextView
+            android:id="@+id/tvEncText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/random_str"
+            android:textColor="@color/darkPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvEncKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEncText"
+            android:layout_margin="@dimen/dp_20"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/key"
+            android:textColor="@color/darkPrimary"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</layout>

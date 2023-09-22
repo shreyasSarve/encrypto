@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PasswordEncrypto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save">save</string>
+    <string name="content_description_save">Save your password</string>
+    <string name="savelist">saved list</string>
+    <string name="copy">copy</string>
+    <string name="content_description_delete">copy generated password</string>
+    <string name="more">more</string>
+    <string name="content_description_more">More</string>
+    <string name="random_str">This can be achieved during Runtime , all you need to do is check the length of string and add Underlined View More at the end of string like this.</string>
+    <string name="key">Key</string>
+</resources>

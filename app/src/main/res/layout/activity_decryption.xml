@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.DecryptionActivity">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/checkboxCipher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="@dimen/dp_10"
+                android:paddingStart="@dimen/dp_10"
+                android:text="CipherText"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/checkboxRailFence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="@dimen/dp_10"
+                android:paddingStart="@dimen/dp_10"
+                android:text="Rail Fence"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_group"
+            android:layout_margin="@dimen/dp_10"
+            android:hint="Enter encrypted here"
+            app:boxBackgroundColor="#20D81B60"
+            app:boxCornerRadiusTopEnd="@dimen/dp_10"
+            app:boxCornerRadiusTopStart="@dimen/dp_10">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDecryptData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_margin="@dimen/dp_10"
+            android:hint="Enter key level"
+            app:boxBackgroundColor="#20D81B60"
+            app:boxCornerRadiusTopEnd="@dimen/dp_10"
+            app:boxCornerRadiusTopStart="@dimen/dp_10">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDecryptKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnDecryptData"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/text1"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/corners_bg"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Decrypt Data"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</layout>

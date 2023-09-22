@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/arsenal</item>
+        <item>@font/atma_light</item>
+        <item>@font/cantora_one</item>
+        <item>@font/concert_one</item>
+        <item>@font/poppins_light</item>
+        <item>@font/poppins_medium</item>
+    </array>
+</resources>

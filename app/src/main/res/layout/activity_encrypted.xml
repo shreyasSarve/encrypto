@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.EncryptedActivity">
+
+        <TextView
+            android:id="@+id/tvEncryptedData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tvKey"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@drawable/dashes"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="@dimen/dp_15"
+            android:text="Encrypted Data"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/tvKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layoutBtn"
+            android:layout_margin="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:text="Key"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/layoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:layout_marginBottom="100dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnCopyED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/corners_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Copy"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnHomeED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/corners_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Home"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnSaveED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/corners_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/copy"
+        android:icon="@drawable/ic_baseline_content_copy_24"
+        android:title="Copy" />
+
+    <item
+        android:id="@+id/save"
+        android:icon="@drawable/ic_baseline_save_24"
+        android:title="Save" />
+
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="More" />
+
+</menu>

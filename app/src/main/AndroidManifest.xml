@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.passwordencrypto">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:textIsSelectable="true"
+        android:theme="@style/Theme.PasswordEncrypto">
+        <activity
+            android:name=".views.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.SavedDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.DecryptionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".views.RailFenceEncryption"
+            android:exported="true" />
+        <activity
+            android:name=".views.CipherTextEncryption"
+            android:exported="true" />
+        <activity
+            android:name=".views.EncryptedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".views.WelcomeActivity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".views.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
